@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*overflow: hidden;*/
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: none repeat scroll 0 0;
+    
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+        text-decoration: none;
+} 
+
+h1,
+h2,
+h4 {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.btn {
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ededed !important;
+    color: #3c3c3c !important;
+    border: 1px solid #ffffff !important;
+}
+
+/*NAVIGATION*/
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
+}
+.inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.inner_main_menu ul li{
+    float: none;
+}
+.inner_main_menu ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+   border-bottom: 1px solid #fff;
+   line-height: 9px;
+}
+.inner_main_menu ul li a:hover {
+    color: #6FDA44;
+}
+
+.header .logo_area img {
+    width: 100px;
+    height: 100px;
+    margin-top: -31px;
+}
+
+
+
+ /*HEADER*/
+
+ .header{
+     height: 800px;
+     width: 100%;
+     padding: 30px 0 30px;
+     background-image: url(../images/landscape1.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: #ffffff;
+ }
+
+ .header img {
+     height: 350px;
+     width: 450px;
+     margin: 70px 0 0 40px;
+ }
+
+ .header h1 {
+     font-size: 100px;
+     font-weight: 700;
+     padding-top: 30px;
+     color: #272222ba;
+ }
+.header h1 span {
+    color: #324967;
+}
+
+ @media(max-width:768px) {
+        .header{
+            padding: 30px;
+            height: 750px;
+        }
+
+        .header img {
+            width: 90%;
+            height: 300px;
+            margin: 20px 0 0 20px;
+        }
+
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+      .navbar-toggle {
+        background-color: #abbacc;
+        border: 1px solid #324967; 
+      }
+
+      .navbar-toggle span {
+          background-color: #fff;
+      }
+       
+ }
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 0 21px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media(max-width: 768px) {
+    .column a {
+        margin-left: 10px;
+    }
+    .column {
+        width: 17%;
+    }
+    
+    .inner_main_menu ul {
+        text-align: left;
+    }
+
+  }
+
+
+
+ /*HISTORY*/
+ .history {
+    height: 800px;
+    width: 100%;
+    padding: 30px 0 30px;
+    background-image: url(../images/landscape6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+ }
+ .dots{
+    font-size: 131px;
+    color: #abbacc;
+    font-family: impact;
+   } 
+   .dots::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #abbacc;
+    position: absolute;
+    left: 138px;
+    top: 134px;
+   }
+
+   .dots span {
+    font-size: 16px;
+    top: 112px;
+    position: absolute;
+    left: 138px;
+    font-weight: 700;
+    color: #324967;
+    font-family: impact;
+   }
+
+   /* .history-container {
+       width: 70%;
+   } */
+
+   .history-text {
+    margin-top: -33px;
+    padding-left: 69px;
+    text-align: justify;
+    color: #000;
+    font-size: 14px;
+   }
+ 
+   .img-fluid {
+       max-width: 100%;
+       height: 100%;
+       display: block;
+   }
+
+   .img-column {
+    float: left;
+    padding: 0 21px;
+   }
+
+ @media(max-width: 768px) {
+    .dots {
+        color: #324967;
+        font-size: 50px;
+    }
+    .history-text {
+        font-size: 12px;
+        margin-left: -63px;
+        margin-top: 15px;
+    }
+    .dots span {
+        top: 29px;
+        left: 64px;
+        font-size: 10px;
+    }
+    .dots::before {
+        left: 64px;
+        top: 44px;
+        background-color: #324967;
+    }
+
+    .img-column {
+        margin-left: 20px;
+    }
+ }
+
+ /*CLIMB*/
+
+ .climb-title {
+    font-size: 131px;
+    color: #abbacc;
+    font-family: impact;
+    text-align: left; 
+    margin-left: -10px;
+ }
+
+ .climb-title::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #abbacc;
+    position: absolute;
+    left: 138px;
+    top: 134px;
+ }
+ .climb-title span {
+    font-size: 16px;
+    top: 112px;
+    position: absolute;
+    left: 138px;
+    font-weight: 700;
+    color: #324967;
+    font-family: impact;
+ }
+ .climb p {
+    color: #737373;
+    position: absolute;
+    top: 43%;
+    left: 17%;
+ }
+
+ @media(max-width: 768px) {
+     .climb {
+        height: 185px;  
+     }
+     .climb p {
+        font-size: 12px;
+        margin-top: 36px;
+        line-height: 11px;
+        margin-left: -36px;
+     }
+     .climb-title {
+        font-size: 50px;
+        margin-top: 67px;
+        margin-left: 10px;
+     }
+
+     .climb-title span {
+        top: 26px;
+        left: 77px;    
+     }
+
+     .climb-title::before {
+        left: 79px;
+        top: 46px;
+     }
+ }
+
+
+ /*MOUNTAIN*/
+ .Mountain {
+     background-color: #324967;
+     height: 27px;
+ }
+
+
+ .mountain1 {
+     background-color: #ccc;
+ }
+
+ .mountain1 h1 {
+     color: #324967;
+     position: relative;
+     width: 174px;
+     text-align: center;
+     margin-top: 7px;
+     font-size: 12px;
+     font-family: impact;
+ }
+
+ .mountain1 h1::before {
+    content: "";
+    position: absolute;
+    left: 32%;
+    top: 100%;
+    width: 34%;
+    border-top: 1px solid #324967;
+ }
+
+ .mountain2 h1 {
+     color: #ccc;
+     padding: 0 20px;
+     margin-top: 7px;
+     font-size: 12px;
+     font-family: impact;
+ }
+ 
+ .mount-column {
+     float: left;
+     height: 27px
+ }
+
+
+
+ /*SCHEDULE*/
+
+.schedule {
+    height: 600px;
+    width: 100%;
+    padding: 30px 0 30px;
+    background-image: url(../images/landscape3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.schedule h1 {
+    font-family: impact;
+    color: #324967;
+    font-weight: 500;
+    padding: 0;
+}
+
+table{
+    background-color: #fff; 
+    opacity: 0.7;
+    border-collapse: separate;
+    border-spacing: 20px 0 !important;
+
+}
+
+
+td:nth-last-child(2) {
+   padding-bottom: 20px;
+} 
+
+@media(max-width: 768px) {
+    table {
+        margin: auto;
+    }
+}
+
+
+
+
+
+ /*FOOTER*/
+
+ .footer {
+     background-color: #324967;
+     color: #abbacc;
+    
+ }
+ .footer-copyright p{
+    padding-top: 17px;
+    font-weight: bolder;
+    font-size: 11px;
+ }
+
+ .footer-column {
+    float: left;
+    width: 33.33%;
+ }
+
+ @media(max-width: 768px) {
+     .footer-column a {
+        margin-left: 35px;
+     }
+     .footer-column {
+         width: 18%;
+     }
+
+     .footer-copyright p {
+        text-align: right;
+        margin-top: -58px;
+        font-size: 7px;
+     }
+ }
+ 
+
